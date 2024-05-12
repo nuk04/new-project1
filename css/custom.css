@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+
+/*
+ font-family: "Oswald", sans-serif;
+
+
+*/
+
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+   
+:root{
+    --header-font:  "Oswald", sans-serif;
+    --primary-font: "Monserrat", sans-serif;
+    --primary-color : rgb(34, 161, 136);
+    --secondary-color : rgb(73, 76, 77);
+    
+
+
+}
+
+body{
+    font-family: "Monserrat", sans-serif;
+}
+    
+h1,h2,h3,h4,h5,h6{
+    font-family:var(--header-font)
+}
+img{
+  max-width: 100%;
+  display: block;
+
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 20px 50px;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600b;
+    border-radius: 5px;
+    font-size: 24px;
+    
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column-1-2{
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+
+.column-1-3{
+    flex-basis: 33.3%;
+    max-width: 33.3%;
+    padding: 15px;
+
+
+}
+
+
+.column-1-4{
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 15px;
+
+}
+
+.column-1-5{
+    flex-basis: 20%;
+    max-width: 20%;
+    padding: 15px;
+
+
+}
+
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    
+}
+.justify-end{
+    justify-content: flex-end;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+
+
+
+/*herosection css*/
+.herosection{
+    background-image: url(../images/priscilla-du-preez-frRrn5ASwzo-unsplash.jpg);
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(78, 69, 69);
+    background-position: top center;
+    background-blend-mode:soft-light ;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    color: azure;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.2;
+    
+}
+.herosection p{
+    color: white;
+    font-size: 20px;
+    margin: 20px 0 40px;
+  max-width: 700px;
+    
+}
+.herosection.container{
+    max-width: 600px;
+    text-align: center;
+}
+
+/* gallerysection */
+.gallerysection{
+    padding: 100px 0;
+}
+h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+.imagebox{
+overflow: hidden;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.imagebox img{
+transition-duration: 0.4s;
+aspect-ratio: 1/1;
+object-fit: cover;
+}
+.imagebox:hover img{
+   transform: scale(1.1);
+}
+
+.imagetext{
+background: color #e7e5e5; ;
+padding: 20px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.imagetext h3{
+font-size: 25px;
+}
+.imagetext p{
+font-size: 18px;
+margin-top: 15px;
+}
+
+/* header css */
+header{
+padding: 15PX 0;
+position: sticky;
+top: 0;
+background-color:#fff;
+}
+header .logo{
+    flex-basis: 15%;
+    max-width:15% ;
+  background-color:black;
+    border-radius: 5px;
+}
+header nav{
+    flex-basis: 65%;
+    max-width:65% ;
+}
+header.cart{
+    flex-basis: 20%;
+    min-width:20% ;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+   
+}
+nav ul{
+display: flex;
+list-style-type: none;
+justify-content: center;
+
+}
+nav ul li{
+
+}
+nav ul li a{
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: var(--header-font);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+nav ul li a:hover{
+    background-color:var(--primary-color);
+    color: #e7e5e5;
+    
+
+}
+
+.cart select{
+    padding: 5px 5px;
+}
+.cart a{
+
+}
+.cart a i{
+   color: #2f2f2f;
+}
+
+/* header css */
+/*about us css*/
+.aboutus{
+    padding: 100px;
+}
+.aboutus.container{
+padding:0 8%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: 10px;
+
+}
+.aboutus h2{
+font-size: 80px;
+}
+.aboutus h2 span{
+color: var(--primary-color);
+}
+.aboutus p{
+font-size: 22px;
+margin: 20px 0;
+}
+.about iframe{
+
+}
+/*gallery css*/
+.gallery{
+   padding: 100px 0;
+}
+.gallery img{
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px 0 #6262622b;
+    filter: grayscale(1);
+    aspect-ratio: 9/12;
+    object-fit: cover;
+}
+.gallery img:hover{
+    box-shadow: 0px 0px 0px 0 #6262622b;
+transition-duration: 0.4s;
+filter: grayscale(0);
+
+}
+/*contact css*/ textarea
+.contact{
+padding: 100px 0;
+}
+.contact h2{
+text-align: center;
+}
+.contact .container{
+    max-width: 600px;
+}
+.contact form{
+}
+.contact input,.contact textarea{
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px ;
+    border: 1px solid black;
+}
+
+.contact button{
+    background-color:rgb(10, 10, 10) ;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 4px; 
+    
+}
+/*contact css*/
+
+.facebook{
+background-color:var(--primary-color);
+color: white;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+position: fixed;
+top: 50%;
+transform: translateY(-50%);
+right: 20px;
+
+}
